@@ -1,0 +1,134 @@
+<%- include('layouts/main') %>
+<style>
+    .accordion {
+      background-color: #e3ede6;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      font-weight: bold
+    }
+     
+    .accordion:after {
+      content: '\002B';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    </style>
+    <div class="container" >
+    
+    <h2>Frequent Question and Answer</h2>
+    <!-- <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p> -->
+    <button class="accordion">How is underground water analysis will be help for farming?</button>
+    <div class="panel">
+      <p>The growing importance of groundwater for agriculture can largely be explained by the capacity of groundwater to act as a reliable water source for irrigation, providing water on demand, while being largely unaffected by seasonal surface hydrological variation</p>
+    </div>
+   
+    <button class="accordion">What are the general irrigation techniques used?</button>
+    <div class="panel">
+      <p>i. Drip irrigation<br>
+
+ii. Irrigation sprinkler<br>
+
+iii. Center-pivot irrigation<br>
+
+iv. Subsurface textile irrigation<br>
+
+v. Deficit irrigation<br>
+
+vi. Fertigation<br>
+
+vii. Tidal irrigation<br>
+
+viii. Low-volume irrigation</p>
+    </div>
+ 
+    
+      <button class="accordion">How many Regional, Divisional & State Unit offices of CGWB (Central Ground Water Board)?</button>
+    <div class="panel">
+      <p>CGWB has 18 Regional offices each headed by a Regional Director, 17 Divisional offices each headed by an Executive Engineer and 11 State Unit offices for undertaking various activities in the country. The Central Headquarter is situated at Faridabad.</p>
+    </div>
+
+      <button class="accordion">What is the total availability of the surface and ground water resources in the country?</button>
+    <div class="panel">
+      <p>Estimated utilizable water resources of the country is 1123 Billion Cubic Meter(BCM)/year, out of which, share of surface water and ground water is 690 and 433 BCM/year respectively.</p>
+    </div>
+
+      <button class="accordion">What are the factors affecting the level of underground water?</button>
+    <div class="panel">
+      <p>
+        
+
+ The groundwater level at each monitoring site is generally influenced by certain parameters, e.g. rainfall, aquifer properties (transmissivity), geomorphology, topographic elevation and slope, land use/land cover, proximity to surface water body, proximity to drainage lines, etc.
+      </p>
+    </div>
+
+      <button class="accordion">How does agriculture affect groundwater level?</button>
+    <div class="panel">
+      <p> 
+    Nitrate leaching is a common issue in most agricultural regions of the world, especially where the crops with high water and nitrogen requirements tend to increase potential risk of nitrate pollution to the groundwater [1, 2, 3].</p>
+    </div>
+
+      <button class="accordion">Why are farmers using groundwater more and more now?</button>
+    <div class="panel">
+      <p>
+     Use of groundwater can boost agricultural production, improve rural incomes and strengthen farmers' ability to withstand climate shocks and water variability.</p>
+    </div>
+    
+      <button class="accordion">How does agriculture affect groundwater?</button>
+    <div class="panel">
+      <p>
+         Agriculture, which accounts for 70 percent of water withdrawals worldwide, plays a major role in water pollution. Farms discharge large quantities of agrochemicals, organic matter, drug residues, sediments and saline drainage into water bodies.</p>
+    </div>
+
+      <button class="accordion">What is the importance of groundwater in agriculture in India?</button>
+    <div class="panel">
+      <p>
+
+         Groundwater is a critical resource for food security, providing 40% of the world's irrigation (1). Millions of farmers depend on groundwater irrigation to help produce 40% of the world's agricultural production, including a large proportion of staple crops like rice and wheat (2)</p>
+    </div>
+
+      <button class="accordion">How much groundwater is used in agriculture in India?</button>
+    <div class="panel">
+      <p>
+
+         More than 90 percent of groundwater in India is used for irrigated agriculture.</p>
+    </div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+
+</div>

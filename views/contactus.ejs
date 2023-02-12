@@ -1,0 +1,99 @@
+<%- include('layouts/main') %> <%- include('layouts/header') %>
+<div class="px-4 py-5 px-md-5 text-center text-lg-start">
+  <div class="container mt-4">
+    <div class="row gx-lg-5 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <h1 class="my-5 display-3 fw-bold ls-tight">
+          Contant us <br />
+          <span>for your business</span>
+        </h1>
+        <p style="color: hsl(217, 10%, 50.8%)">
+            The aim is to help the farmers for the betterment of
+            crop production and to develop the techniques of farming according
+            to underground water availability.
+        </p>
+      </div>
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card">
+          <div class="card-body py-5 px-md-5">
+            <form action="/contactus" method="post">
+              <div class="form-group mt-1">
+                <label for="exampleFormControlInput1">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="ENTER NAME"
+                  name="name"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                  name="emailid"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="exampleFormControlInput1">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="phone number"
+                  name="phone"
+                />
+              </div>
+              <div class="form-group mt-1">
+                <label for="exampleFormControlSelect1">States</label>
+                <select
+                  class="form-control"
+                  id="exampleFormControlSelect1"
+                  name="state"
+                >
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Tamil Nadu	">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comments</label>
+                <textarea
+                  class="form-control mt-2"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="commments"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-success mt-4">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
